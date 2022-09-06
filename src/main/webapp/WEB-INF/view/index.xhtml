@@ -2,15 +2,19 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://java.sun.com/jsf/html">
-<h:head>
+      xmlns:h="http://java.sun.com/jsf/html"
+><h:head>
     <title>Spring + JSF</title>
 </h:head>
 <h:body>
     <h2>Spring + JSF</h2>
     <h:form>
+        <h:inputText value = "Hello World!" />
+
         Name: <h:inputText value="#{helloBean.name}" /> <br /> <br />
         <h:commandButton action="#{helloBean.sayHello()}" value="Submit" />
+        <h3>Hello <h:outputText value="cascascascsac"/></h3>
+
     </h:form>
 </h:body>
 </html>
